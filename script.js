@@ -47,11 +47,9 @@ let dateElement = document.querySelector("#date");
 let currentTime = new Date();
 dateElement.innerHTML = formatDate(currentTime);
 
-// Feature #2
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", search);
 
-// Bonus Feature
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", convertToFahrenheit);
 
