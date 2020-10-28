@@ -62,10 +62,10 @@ dateElement.innerHTML = formatDate(currentTime);
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", search);
 
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
+let fahrenheitLink = document.querySelector("#fahrenheit-input");
 fahrenheitLink.addEventListener("click", convertToFahrenheit);
 
-let celsiusLink = document.querySelector("#celsius-link");
+let celsiusLink = document.querySelector("#celsius-input");
 celsiusLink.addEventListener("click", convertToCelsius);
 
 // let apiKey = "b8a6038e08bd5a42d0cd1291d3f8cd27";
