@@ -1,12 +1,13 @@
+//Getting the date
 function formatDate(date) {
   let hours = date.getHours();
   if (hours < 10) {
     hours = `0${hours}`;
-  }
+  
   let minutes = date.getMinutes();
   if (minutes < 10) {
     minutes = `0${minutes}`;
-  }
+  
 
   let dayIndex = date.getDay();
   let days = [
@@ -22,7 +23,7 @@ function formatDate(date) {
 
   return `${day} ${hours}:${minutes}`;
 }
-
+//Show current temperature
 function showTemperature(response) {
   console.log(response.data);
   document.querySelector("#city").innerHTML = response.data.name;
