@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="icon" type="favicon.ico" text="⭐" />
+    <link
+      rel="icon"
+      href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/sun-with-face_1f31e.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Weather App</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="row">
+        <div class="col">
+          <h1 id="city">New York</h1>
+        </div>
+      </header>
+
+      <section class="row">
+        <div class="col-md col-lg-8 main">
+          <h3 id="date"></h3>
+          <h3 id="time"></h3>
+          <h4>Sunny</h4>
+          <img
+            src="images/sun.svg"
+            alt="icon"
+            width="25% "
+            height="auto"
+          />
+          
+        </div>
+        <aside class="col-md col-lg-4 main">
+          <form class="form-inline my-0 my-lg-0" id="search-form">
+            <input
+              class="form-control mr-sm-0"
+              type="search"
+              placeholder="Insert City"
+              aria-label="Search"
+              id="city-input"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
+            </button>
+      
+          </form>
+   <span class="temperature" id="temperature"><b>29</b></span><sup class="sup"><a href="#" id="celsius-input">C°</a>|<a href="#" id ="fahrenheit-input">F°</a></sup>
+          <ul>
+            <li>Precipitation: 0%</li>
+            <li>Humidity: 40%</li>
+            <li>Wind: 13 km/h</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="row banner">
+        <div class="col days">
+          <p><b>Weekly Forecast</b></p>
+        </div>
+      </section>
+      <section class="row week">
+        <div class="Monday col-md col-lg">
+          <h3>Monday</h3>
+          <img
+            src="images/showers.svg"
+            alt="icon"
+            width="25% "
+            height="auto"
+          />
+          <p>20°C| <a href="#"> °F</a></p>
+          <p>Snow to Rain</p>
+        </div>
+        <div class="Tuesday col-md col-lg">
+          <h3>Tuesday</h3>
+          <img
+            src="images/cloud-sun.svg"
+            alt="icon"
+            width="25% "
+            height="auto"
+          />
+          <p>18°C| <a href="#"> °F</a></p>
+          <p>Snow to Rain</p>
+        </div>
+
+        <div class="Wednesday col-md col-lg">
+          <h3>Wednesday</h3>
+          <img
+            src="images/cloud-moon.svg"
+            alt="icon"
+            width="25% "
+            height="auto"
+          />
+          <p>25°C| <a href="#"> °F</a></p>
+          <p>Snow to Rain</p>
+        </div>
+        <div class="Thursday col-md col-lg">
+          <h3>Thursday</h3>
+          <img
+            src="images/smog.svg"
+            alt="icon"
+            width="25% "
+            height="auto"
+          />
+          <p>25°C| <a href="#"> °F</a></p>
+          <p>Snow to Rain</p>
+        </div>
+        <div class="Friday col-md col-lg">
+          <h3>Friday</h3>
+          <img
+            src="images/sun.svg"
+            alt="icon"
+            width="25% "
+            height="auto"
+          />
+          <p>25°C| <a href="#"> °F</a></p>
+          <p>Snow to Rain</p>
+        </div>
+        <div class="Saturday col-md col-lg">
+          <h3>Saturday</h3>
+          <img
+            src="images/cloud.svg"
+            alt="icon"
+            width="25% "
+            height="auto"
+          />
+          <p>25°C| <a href="#"> °F</a></p>
+          <p>Snow to Rain</p>
+        </div>
+        <div class="Sunday col-md col-lg">
+          <h3>Sunday</h3>
+          <img
+            src="images/umbrella.svg"
+            alt="icon"
+            width="25% "
+            height="auto"
+          />
+          <p>25°C| <a href="#"> °F</a></p>
+          <p>Snow to Rain</p>
+        </div>
+      </section>
+
+      <footer class="row">
+        <div class="col-md">Coded by Lena</div>
+        <div class="col-md">
+          <a href="#">Facebook</a> | <a href="#">Instagram</a> |
+          <a href="#">Twitter</a>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>
+</div>
+     <script src="src/script.js"></script>
+  </body>
+</html>;
