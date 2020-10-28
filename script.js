@@ -46,6 +46,14 @@ function convertToCelsius(event) {
   temperatureElement.innerHTML = 19;
 }
 
+function showTemperature(response) {
+  console.log(response.data);
+  document.querySelector("#city").innerHTML = response.data.name;
+  document.querySelector("#tempToday").innerHTML = Math.round(
+    response.data.main.temp
+  );
+}
+
 // Feature #1
 let dateElement = document.querySelector("#date");
 let currentTime = new Date();
