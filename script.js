@@ -62,11 +62,11 @@ dateElement.innerHTML = formatDate(currentTime);
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", search);
 
-let fahrenheitLink = document.querySelector("#fahrenheit-input");
-fahrenheitLink.addEventListener("click", convertToFahrenheit);
+let fahrenheitInput = document.querySelector("#fahrenheit-input");
+fahrenheitInput.addEventListener("click", convertToFahrenheit);
 
-let celsiusLink = document.querySelector("#celsius-input");
-celsiusLink.addEventListener("click", convertToCelsius);
+let celsiusInput = document.querySelector("#celsius-input");
+celsiusInput.addEventListener("click", convertToCelsius);
 
 // let apiKey = "b8a6038e08bd5a42d0cd1291d3f8cd27";
 // let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
