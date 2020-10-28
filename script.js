@@ -55,3 +55,7 @@ fahrenheitLink.addEventListener("click", convertToFahrenheit);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", convertToCelsius);
+
+let apiKey = "b8a6038e08bd5a42d0cd1291d3f8cd27";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
+let city = document.querySelector("#city-input").value;
