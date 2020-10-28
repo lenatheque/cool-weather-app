@@ -44,13 +44,13 @@ function search(event) {
 
 function convertToFahrenheit(event) {
   event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
+  let temperatureElement = document.querySelector("#fahrenheit-input");
   temperatureElement.innerHTML = 66;
 }
 
 function convertToCelsius(event) {
   event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
+  let temperatureElement = document.querySelector("#celsius-input");
   temperatureElement.innerHTML = 19;
 }
 
@@ -75,7 +75,7 @@ celsiusLink.addEventListener("click", convertToCelsius);
 function showPosition(position) {
   console.log(response.data);
   let h1 = document.querySelector("#city-selector");
-  h1.innerHTML = "Seattle";
+  h1.innerHTML = "New York";
   console.log(position.coords.latitude);
   console.log(position.coords.longitude);
 }
