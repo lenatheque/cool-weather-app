@@ -1,9 +1,12 @@
+
+let now =new Date();
+
 function formatDate(date) {
-  let hours = date.getHours();
+  let hours = now.getHours();
   if (hours < 10) {
     hours = `0${hours}`;
   }
-  let minutes = date.getMinutes();
+  let minutes = now.getMinutes();
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
@@ -19,10 +22,12 @@ function formatDate(date) {
     "Saturday",
   ];
   let day = days[dayIndex];
+  let date= document.querySelector("#date");
+  date.innerHTML=`${day},${hour:${minutes}`;
 
-  return `${day} ${hours}:${minutes}`;
+  // return `${day} ${hours}:${minutes}`;
 }
-
+ 
 function showTemperature(response) {
   console.log(response.data);
   document.querySelector("#city").innerHTML = response.data.name;
