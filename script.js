@@ -23,11 +23,19 @@ function formatDate(date) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function showTemperature(response) {
+  console.log(response.data);
+  document.querySelector("#city").innerHTML = response.data.name;
+  document.querySelector("#tempToday").innerHTML = Math.round(
+    response.data.main.temp
+  );
+}
+
 function search(event) {
   event.preventDefault();
-  let cityElement = document.querySelector("#city");
-  let cityInput = document.querySelector("#city-input");
-  cityElement.innerHTML = cityInput.value;
+  // let cityElement = document.querySelector("#city");
+  // let cityInput = document.querySelector("#city-input");
+  // cityElement.innerHTML = cityInput.value;
   let apiKey = "5b0bfa960cf8480fafd9ea6aed867930";
   let city = document.querySelector("#city-input").value;
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
@@ -44,14 +52,6 @@ function convertToCelsius(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = 19;
-}
-
-function showTemperature(response) {
-  console.log(response.data);
-  document.querySelector("#city").innerHTML = response.data.name;
-  document.querySelector("#tempToday").innerHTML = Math.round(
-    response.data.main.temp
-  );
 }
 
 // Feature #1
