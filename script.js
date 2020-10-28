@@ -71,3 +71,18 @@ celsiusLink.addEventListener("click", convertToCelsius);
 // let apiKey = "b8a6038e08bd5a42d0cd1291d3f8cd27";
 // let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
 // let city = document.querySelector("#city-input").value;
+
+function showPosition(position) {
+  console.log(response.data);
+  let h1 = document.querySelector("#city-selector");
+  h1.innerHTML = "Seattle";
+  console.log(position.coords.latitude);
+  console.log(position.coords.longitude);
+}
+
+function getCurrentPosition() {
+  navigator.geolocation.getCurrentPosition(showPosition);
+}
+
+let button = document.querySelector("#current-button");
+button.addEventListener("click", getCurrentPosition);
