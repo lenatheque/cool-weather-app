@@ -44,13 +44,13 @@ function search(event) {
 function convertToFahrenheit(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#fahrenheit-input");
-  tempToday.innerHTML = fahrenheitInput;
+  return (tempToday.innerHTML = showTemperature);
 }
 
 function convertToCelsius(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#celsius-input");
-  tempToday.innerHTML = celsiusInput;
+  tempToday.innerHTML = showTemperature;
 }
 
 let searchForm = document.querySelector("#search-form");
