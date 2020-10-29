@@ -41,20 +41,18 @@ function search(event) {
   axios.get(apiUrl).then(showTemperature);
 }
 
+// Convert temperatures
 function convertToFahrenheit(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#fahrenheit-input");
-  tempToday.innerHTML = fahrenheitInput;
+  temperatureElement.innerHTML = fahrenheitInput;
 }
 
 function convertToCelsius(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#celsius-input");
-  tempToday.innerHTML = celsiusInput;
+  temperatureElement.innerHTML = celsiusInput;
 }
-
-let searchForm = document.querySelector("#search-form");
-searchForm.addEventListener("submit", search);
 
 let fahrenheitInput = document.querySelector("#fahrenheit-input");
 fahrenheitInput.addEventListener("click", convertToFahrenheit);
@@ -62,9 +60,10 @@ fahrenheitInput.addEventListener("click", convertToFahrenheit);
 let celsiusInput = document.querySelector("#celsius-input");
 celsiusInput.addEventListener("click", convertToCelsius);
 
+//Geolocation
 function showPosition(position) {
   console.log(response.data);
-  let h1 = document.querySelector("#city-selector");
+  let h1 = document.querySelector("#city");
   h1.innerHTML = "New York";
   console.log(position.coords.latitude);
   console.log(position.coords.longitude);
@@ -73,6 +72,8 @@ function showPosition(position) {
 function getCurrentPosition() {
   navigator.geolocation.getCurrentPosition(showPosition);
 }
+let searchForm = document.querySelector("#search-form");
+searchForm.addEventListener("submit", search);
 
 let button = document.querySelector("#current-button");
 button.addEventListener("click", getCurrentPosition);
