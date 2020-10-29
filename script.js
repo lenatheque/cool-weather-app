@@ -1,4 +1,4 @@
-//Getting the current date
+//Getting the current date and time
 function formatDate(date) {
   let hours = date.getHours();
   if (hours < 10) {
@@ -35,7 +35,13 @@ function displayWeatherCondition(response) {
   );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
+  iconElement.setAttribute(
+    "src",
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
+
+let iconElement = document.querySelector("#icon-today");
 
 function searchCity(city) {
   let apiKey = "5b0bfa960cf8480fafd9ea6aed867930";
@@ -85,58 +91,3 @@ let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
 searchCity("New York");
-
-// Weekly Forecast//
-
-////
-// let dateElement = document.querySelector("#date");
-// let currentTime = new Date();
-// dateElement.innerHTML = formatDate(currentTime);
-
-// function showTemperature(response) {
-//   console.log(response.data);
-//   document.querySelector("#city").innerHTML = response.data.name;
-//   document.querySelector("#tempToday").innerHTML = Math.round(
-//     response.data.main.temp
-//   );
-// }
-
-// function search(event) {
-//   event.preventDefault();
-//   let apiKey = "5b0bfa960cf8480fafd9ea6aed867930";
-//   let city = document.querySelector("#city-input").value;
-//   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-//   axios.get(apiUrl).then(showTemperature);
-// }
-
-// // Convert temperatures
-// function convertToFahrenheit(event) {
-//   event.preventDefault();
-//   let temperatureElement = document.querySelector("#fahrenheit-input");
-//   temperatureElement.innerHTML = fahrenheitInput;
-// }
-
-// function convertToCelsius(event) {
-//   event.preventDefault();
-//   let temperatureElement = document.querySelector("#celsius-input");
-//   temperatureElement.innerHTML = celsiusInput;
-// }
-
-// let fahrenheitInput = document.querySelector("#fahrenheit-input");
-// fahrenheitInput.addEventListener("click", convertToFahrenheit);
-
-// let celsiusInput = document.querySelector("#celsius-input");
-// celsiusInput.addEventListener("click", convertToCelsius);
-
-// //Geolocation
-// function showPosition(position) {
-//   console.log(response.data);
-//   let h1 = document.querySelector("#city");
-//   h1.innerHTML = "New York";
-//   console.log(position.coords.latitude);
-//   console.log(position.coords.longitude);
-// }
-
-// function getCurrentPosition() {
-//   navigator.geolocation.getCurrentPosition(showPosition);
-// }
