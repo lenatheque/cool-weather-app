@@ -45,13 +45,13 @@ function search(event) {
 function convertToFahrenheit(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#fahrenheit-input");
-  temperatureElement.innerHTML = temperatureElement;
+  temperatureElement.innerHTML = #fahrenheit - input;
 }
 
 function convertToCelsius(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#celsius-input");
-  temperatureElement.innerHTML = temperatureElement;
+  temperatureElement.innerHTML = #celsius - input;
 }
 
 let fahrenheitInput = document.querySelector("#fahrenheit-input");
@@ -77,3 +77,5 @@ searchForm.addEventListener("submit", search);
 
 let button = document.querySelector("#current-button");
 button.addEventListener("click", getCurrentPosition);
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+axios.get(apiUrl).then(showTemperature);
