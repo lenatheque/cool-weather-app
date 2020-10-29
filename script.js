@@ -44,7 +44,7 @@ function search(event) {
 function convertToFahrenheit(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#fahrenheit-input");
-  return (tempToday.innerHTML = showTemperature);
+  tempToday.innerHTML = showTemperature;
 }
 
 function convertToCelsius(event) {
