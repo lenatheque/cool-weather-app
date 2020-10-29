@@ -31,7 +31,7 @@
         <div class="col-md col-lg-8 main">
           <h3 id="date"></h3>
           <h3 id="time"></h3>
-          <h4>Sunny</h4>
+          <h4 id="description">Sunny</h4>
           <img src="images/sun.svg" alt="icon" width="25% " height="auto" />
         </div>
         <aside class="col-md col-lg-4 main">
@@ -43,15 +43,23 @@
               aria-label="Search"
               id="city-input"
             />
+            <div class="col-md col-lg-4">
+              <button
+                class="btn btn-success w-100"
+                id="current-location-button"
+              >
+                Current
+              </button>
+            </div>
             <button
-              class="btn btn-outline-success my-2 my-sm-0"
+              class="btn btn-outline-success col-md col-lg-4"
               type="submit"
-              id="current-button"
+              id="submit"
             >
               Search
             </button>
           </form>
-          <span class="temperature" id="tempToday">29</span
+          <span class="temperature" id="temperature">29</span
           ><sup class="sup"
             ><a href="#" id="celsius-input">C°</a>|<a
               href="#"
@@ -60,9 +68,9 @@
             ></sup
           >
           <ul>
-            <li>Precipitation: 0%</li>
-            <li>Humidity: 40%</li>
-            <li>Wind: 13 km/h</li>
+            <li>Precipitation: <span id="precipitation"></span>%</li>
+            <li>Humidity: <span id="humidity"></span>%</li>
+            <li>Wind: <span id="wind"></span>km/h</li>
           </ul>
         </aside>
       </section>

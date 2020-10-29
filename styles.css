@@ -16,6 +16,12 @@ header {
   padding-top: 0px;
   padding-bottom: 0px;
 }
+#fahrenheit-input {
+  color: pink;
+}
+#celsius-input {
+  color: pink;
+}
 
 .main {
   background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
@@ -54,9 +60,9 @@ ul {
   list-style: none;
 }
 
-.button {
+#submit {
   color: #fbc8d4;
-  margin: 50px;
+  margin: 5px;
   text-align: center;
 }
 
@@ -97,4 +103,10 @@ a:hover {
 }
 .container {
   height: auto;
+}
+#current-location-button {
+  background-color: pink;
+  color: #5f72bd;
+  border-color: #5f72bd;
+  margin: 5px;
 }
