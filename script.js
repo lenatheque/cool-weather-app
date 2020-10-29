@@ -45,13 +45,13 @@ function search(event) {
 function convertToFahrenheit(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#fahrenheit-input");
-  temperatureElement.innerHTML = #fahrenheit - input;
+  temperatureElement.innerHTML = convertToFahrenheit;
 }
 
 function convertToCelsius(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#celsius-input");
-  temperatureElement.innerHTML = #celsius - input;
+  temperatureElement.innerHTML = convertToCelsius;
 }
 
 let fahrenheitInput = document.querySelector("#fahrenheit-input");
