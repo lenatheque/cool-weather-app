@@ -27,8 +27,7 @@ function displayWeatherCondition(response) {
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
-  document.querySelector("#precipitation").innerHTML =
-    response.data.main.precipitation;
+  document.querySelector("#precipitation").innerHTML = response.data.main.value;
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
