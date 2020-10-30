@@ -120,9 +120,11 @@ function showFahrenheitTemp(event) {
   let windUnitElement = document.querySelector("#wind-unit");
   windUnitElement.innerHTML = ` mph`;
 }
-let fahrenheitTemperature = null;
-let fahrenheitFeel = null;
-let windSpeed = null;
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", showCelsiusTemp);
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", showFahrenheitTemp);
 
 function convertToFahrenheit(event) {
   event.preventDefault();
