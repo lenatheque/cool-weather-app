@@ -103,6 +103,27 @@ function getCurrentLocation(event) {
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
+function showFahrenheitTemp(event) {
+  event.preventDefault();
+  fahrenheitLink.classList.add("active");
+  celsiusLink.classList.remove("active");
+  let temperatureElement = document.querySelector("#temp-now");
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+
+  let tempFeelElement = document.querySelector("#temp-feel");
+  tempFeelElement.innerHTML = Math.round(fahrenheitFeel);
+  let tempFeelUnit = document.querySelector("#temp-feel-unit");
+  tempFeelUnit.innerHTML = `°F`;
+
+  let windElement = document.querySelector("#wind-now");
+  windElement.innerHTML = Math.round(windSpeed);
+  let windUnitElement = document.querySelector("#wind-unit");
+  windUnitElement.innerHTML = ` mph`;
+}
+let fahrenheitTemperature = null;
+let fahrenheitFeel = null;
+let windSpeed = null;
+
 function convertToFahrenheit(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
