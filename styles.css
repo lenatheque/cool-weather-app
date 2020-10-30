@@ -36,7 +36,7 @@ aside {
   text-align: center;
   text-decoration: none;
 }
-.week {
+.weather-forecast {
   background-image: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);
   padding-top: 40px;
   padding-bottom: 40px;

@@ -29,16 +29,12 @@
 
       <section class="row">
         <div class="col-md col-lg-8 main">
-          <h3 id="date"></h3>
-          <h3 id="time"></h3>
-          <h4 id="description"></h4>
-          <img
-            src="images/sun.svg"
-            alt="icon"
-            width="25% "
-            height="auto"
-            id="icon-today"
-          />
+          <img src="" alt="clear" width="25% " height="auto" id="icon" />
+          <ul>
+            <li id="date"></li>
+            <span id="time"></span>
+            <li id="description"></li>
+          </ul>
         </div>
         <aside class="col-md col-lg-4 main">
           <form class="form-inline my-0 my-lg-0" id="search-form">
@@ -51,7 +47,7 @@
             />
             <div class="col-md col-lg-4">
               <button
-                class="btn btn-success w-100"
+                class="btn btn-primary w-100"
                 id="current-location-button"
               >
                 Current
@@ -66,12 +62,9 @@
             </button>
           </form>
           <span class="temperature" id="temperature">29</span
-          ><sup class="sup"
-            ><a href="#" id="celsius-input">C°</a>|<a
-              href="#"
-              id="fahrenheit-input"
-              >F°</a
-            ></sup
+          ><span class="units"
+            ><a href="#" id="celsius-link" class="active">°C</a> |
+            <a href="#" id="fahrenheit-link">°F</a></span
           >
           <ul>
             <li>Precipitation: <span id="precipitation"></span>%</li>
@@ -87,64 +80,50 @@
         </div>
       </section>
 
-      <section class="row week">
+      <!-- weekly forecast -->
+
+      <section class="row weather-forecast" id="forecast">
         <div class="Monday col-md col-lg">
-          <h3 id="monday">Monday</h3>
-          <img src="images/showers.svg" alt="icon" width="25% " height="auto" />
-          <p id="monday-temp">20°C| <a href="#"> °F</a></p>
-          <p id="monday-description">Snow to Rain</p>
+          <h3>Monday</h3>
+          <img src="" alt="clear" width="25% " height="auto" id="icon/>
+          <p id="weather-forecast-temperature">20°C| <a href="#"> °F</a></p>
+          <p id="description">Snow to Rain</p>
         </div>
         <div class="Tuesday col-md col-lg">
-          <h3 id="tuesday">Tuesday</h3>
-          <img
-            src="images/cloud-sun.svg"
-            alt="icon"
-            width="25% "
-            height="auto"
-          />
-          <p id="tuesday-temp">18°C| <a href="#"> °F</a></p>
-          <p id="tuesday-description">Snow to Rain</p>
+          <img src="" alt="clear" width="25% " height="auto" id="icon/>
+          <p id="weather-forecast-temperature">20°C| <a href="#"> °F</a></p>
+          <p id="description">Snow to Rain</p>
         </div>
 
         <div class="Wednesday col-md col-lg">
-          <h3 id="wednesday">Wednesday</h3>
-          <img
-            src="images/cloud-moon.svg"
-            alt="icon"
-            width="25% "
-            height="auto"
-          />
-          <p id="wednesday-temp">25°C| <a href="#"> °F</a></p>
-          <p id="wednesday-description">Snow to Rain</p>
+          <h3>Wednesday</h3>
+          <img src="" alt="clear" width="25% " height="auto" id="icon/>
+          <p id="weather-forecast-temperature">20°C| <a href="#"> °F</a></p>
+          <p id="description">Snow to Rain</p>
         </div>
         <div class="Thursday col-md col-lg">
-          <h3 id="thursday">Thursday</h3>
-          <img src="images/smog.svg" alt="icon" width="25% " height="auto" />
-          <p id="thursday-temp">25°C| <a href="#"> °F</a></p>
-          <p id="thursday-description">Snow to Rain</p>
+          <h3>Thursday</h3>
+          <img src="" alt="clear" width="25% " height="auto" id="icon/>
+          <p id="weather-forecast-temperature">20°C| <a href="#"> °F</a></p>
+          <p id="description">Snow to Rain</p>
         </div>
         <div class="Friday col-md col-lg">
-          <h3 id="friday">Friday</h3>
-          <img src="images/sun.svg" alt="icon" width="25% " height="auto" />
-          <p id="friday-temp">25°C| <a href="#"> °F</a></p>
-          <p id="friday-description">Snow to Rain</p>
+          <h3>Friday</h3>
+          <img src="" alt="clear" width="25% " height="auto" id="icon/>
+          <p id="weather-forecast-temperature">20°C| <a href="#"> °F</a></p>
+          <p id="description">Snow to Rain</p>
         </div>
         <div class="Saturday col-md col-lg">
-          <h3 id="saturday">Saturday</h3>
-          <img src="images/cloud.svg" alt="icon" width="25% " height="auto" />
-          <p id="saturday-temp">25°C| <a href="#"> °F</a></p>
-          <p id="saturday-description">Snow to Rain</p>
+          <h3>Saturday</h3>
+          <img src="" alt="clear" width="25% " height="auto" id="icon/>
+          <p id="weather-forecast-temperature">20°C| <a href="#"> °F</a></p>
+          <p id="description">Snow to Rain</p>
         </div>
         <div class="Sunday col-md col-lg">
-          <h3 id="sunday">Sunday</h3>
-          <img
-            src="images/umbrella.svg"
-            alt="icon"
-            width="25% "
-            height="auto"
-          />
-          <p id="sunday-temp">25°C| <a href="#"> °F</a></p>
-          <p id="sunday-description">Snow to Rain</p>
+          <h3>Sunday</h3>
+          <img src="" alt="clear" width="25% " height="auto" id="icon/>
+          <p id="weather-forecast-temperature">20°C| <a href="#"> °F</a></p>
+          <p id="description">Snow to Rain</p>
         </div>
       </section>
       <footer class="row">
