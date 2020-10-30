@@ -3,11 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="icon" type="favicon.ico" text="⭐" />
-    <link
-      rel="icon"
-      href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/sun-with-face_1f31e.png"
-    />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -21,6 +18,7 @@
 
   <body>
     <div class="container">
+       <div class="weather-app-wrapper">
       <header class="row">
         <div class="col">
           <h1 id="city">New York</h1>
@@ -29,37 +27,38 @@
 
       <section class="row">
         <div class="col-md col-lg-8 main">
-          <img src="" alt="clear" width="25% " height="auto" id="icon" />
+         
           <ul>
             <li id="date"></li>
             <span id="time"></span>
             <li id="description"></li>
           </ul>
+           <img src="" alt="clear" width="25% " height="auto" id="icon" />
         </div>
         <aside class="col-md col-lg-4 main">
-          <form class="form-inline my-0 my-lg-0" id="search-form">
+          <form class="mb-3" id="search-form">
             <input
-              class="form-control mr-sm-0"
+              class="form-control col-lg-4mr-sm-0 mb-3 w-100"
               type="search"
               placeholder="Insert City"
               aria-label="Search"
               id="city-input"
             />
-            <div class="col-md col-lg-4">
+            <div class="col-lg-4">
               <button
-                class="btn btn-primary w-100"
+                class="btn btn-primary col-lg-4 mr-sm-0 mb-3 w-100"
                 id="current-location-button"
               >
                 Current
               </button>
-            </div>
             <button
-              class="btn btn-outline-success col-md col-lg-4"
+              class="btn btn-outline-success col-lg-4"
               type="submit"
               id="submit"
             >
               Search
             </button>
+             </div>
           </form>
           <span class="temperature" id="temperature">29</span
           ><span class="units"
@@ -139,7 +138,9 @@
           <a href="#">Facebook</a> | <a href="#">Instagram</a> |
           <a href="#">Twitter</a>
         </div>
+        </footer>
       </footer>
+    </div>
     </div>
     <script src="script.js"></script>
   </body>

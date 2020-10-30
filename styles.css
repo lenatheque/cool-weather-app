@@ -36,6 +36,11 @@ aside {
   text-align: center;
   text-decoration: none;
 }
+
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
 .weather-forecast {
   background-image: linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);
   padding-top: 40px;
@@ -47,12 +52,22 @@ aside {
 h1,
 h2,
 h3,
-h4 li,
+h4,
 ul,
 form {
   text-align: center;
   text-decoration: none;
   list-style: none;
+}
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  color: white;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
 }
 
 ul {
@@ -69,7 +84,11 @@ ul {
 .btn-outline-success {
   color: pink;
   border-color: pink;
-  margin: 50px;
+  margin: 5px;
+
+  text-align: center;
+  display: inline-block;
+  width: 100%;
 }
 .btn-outline-success:hover {
   background-color: pink;
@@ -83,6 +102,19 @@ ul {
   border-radius: 4px;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+.weather-forecast img {
+  display: block;
+  margin: 0 auto;
+  height: 48px;
+  width: 48px;
+}
+
+#icon {
+  display: block;
+  margin: 0 auto;
+  height: 200px;
+  width: 200px;
 }
 
 footer {
