@@ -97,7 +97,7 @@ function handleSubmit(event) {
 
 function getCurrentLocation(event) {
   event.preventDefault();
-  navigator.geolocation.getCurrentPosition(searchLocation);
+  navigator.geolocation.getCurrentPosition(search);
 }
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
