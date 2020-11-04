@@ -119,9 +119,6 @@ function displayCelsiusTemperature(event) {
 
 let celsiusTemperature = null;
 
-let currentTime = new Date();
-dateElement.innerHTML = formatDate(currentTime);
-
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
