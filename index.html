@@ -19,113 +19,131 @@
   <body>
     <div class="container">
       <div class="weather-app-wrapper">
-<div class="weather-app">
-  <form id="search-form" class="mb-3">
-    <div class="row">
-      <div class="col-9">
-        <input type="search" placeholder="Insert City..."class="form-control" id="city-input" autocomplete="off"/>
-      </div>
-      <div col="col-3">
-        <input type="submit" value="Search" class="btn btn-primary w-100"/>
-      </div>
-    </div>
-  </form>
-  <div class="overview">
-    <h1 id="city"></h1>
-    <ul><li>Last updated: <span id="date"></span></li>
-    <li id="description"></li></ul>
-  </div>
-  <div class="row">
-    <div class="col-6">
-      <div class="clearfix weather-temperature">
-        <img src="" alt="Clear" id="icon" class="float-left" />
-        <div class="float-left">
-          <strong id="temperature"></strong>
-          <span class="units"> <a href="#" id="celsius-link" class="active"> C</a>|
-          <a href="#" id="fahrenheit-link"> F</a></span> 
-        </div>
-      </div>
-    </div>
-    <div class="col-6">
-      <ul><li>Humidity:<span id="humidity"></span>%</li><li>Wind:<span id="wind"></span>km/h</li></ul>
-    </div>
-  </div>
-  <div class="row weather-forecast" id="forecast"></div>
-</div>
-<small>
-  <a href="https://github.com/lenatheque/cool-weather-app" target="_blank">Open-source code</a> by Lorena Alvarez
-</small>
-      </div>
-    </div>
-<script src="script.js"></script>
-  </body>
-  </html>
-
-
-
-<!--    
-       <div class="weather-app-wrapper">
-      <header class="row">
-        <div class="col">
-          <h1 id="city">New York</h1>
-        </div>
-      </header>
-
-      <section class="row">
-        <div class="col-md col-lg-8 main w-100">
-         
-          <ul>
-            <li id="date"></li>
-            <span id="time"></span>
-            <li id="description"></li>
-          </ul>
-           <img src="" alt="clear" width="25% " height="auto" id="icon" />
-        </div>
-        <aside class="col-md col-lg-4 main">
-          <form class="mb-3 my-0 my-lg-0 w-100" id="search-form">
-            <input
-              class="form-control mb-3 my-0 my-lg-0 w-100"
-              type="search"
-              placeholder="Insert City"
-              aria-label="Search"
-              id="city-input"
-            />
-            <div class="col-lg-4">
-              <button
-                class="btn btn-primary mb-3 my-0 my-lg-0 w-100"
-                id="current-location-button"
-              >
-                Current
-              </button>
-            <button
-              class="btn btn-outline-success mb-3 my-0 my-lg-0 w-100"
-              type="submit"
-              id="submit"
-            >
-              Search
-            </button>
-             </div>
+        <div class="weather-app">
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Insert City..."
+                  class="form-control"
+                  id="city-input"
+                  autocomplete="off"
+                />
+              </div>
+              <div col="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-primary w-100"
+                />
+              </div>
+            </div>
           </form>
-          <span class="temperature" id="temperature">29</span
-          ><span class="units"
-            ><a href="#" id="celsius-link" class="active">°C</a> |
-            <a href="#" id="fahrenheit-link">°F</a></span
-          >
-          <ul>
-            <li>Precipitation: <span id="precipitation"></span>%</li>
-            <li>Humidity: <span id="humidity"></span>%</li>
-            <li>Wind: <span id="wind"></span>km/h</li>
-          </ul>
-        </aside>
-      </section>
-
-      <section class="row banner">
-        <div class="col days">
-          <p><b>Weekly Forecast</b></p>
+          <div class="overview">
+            <h1 id="city"></h1>
+            <ul>
+              <li>Last updated: <span id="date"></span></li>
+              <li id="description"></li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="clearfix weather-temperature">
+                <img src="" alt="Clear" id="icon" class="float-left" />
+                <div class="float-left">
+                  <strong id="temperature"></strong>
+                  <span class="units">
+                    <a href="#" id="celsius-link" class="active"> C</a>|
+                    <a href="#" id="fahrenheit-link"> F</a></span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Humidity:<span id="humidity"></span>%</li>
+                <li>Wind:<span id="wind"></span>km/h</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row weather-forecast" id="forecast"></div>
         </div>
-      </section>
+        <small>
+          <a
+            href="https://github.com/lenatheque/cool-weather-app"
+            target="_blank"
+            >Open-source code</a
+          >
+          by Lorena Alvarez
+        </small>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
 
-      <!-- weekly forecast -->
+<div class="weather-app-wrapper">
+  <header class="row">
+    <div class="col">
+      <h1 id="city">New York</h1>
+    </div>
+  </header>
+
+  <section class="row">
+    <div class="col-md col-lg-8 main w-100">
+      <ul>
+        <li id="date"></li>
+        <span id="time"></span>
+        <li id="description"></li>
+      </ul>
+      <img src="" alt="clear" width="25% " height="auto" id="icon" />
+    </div>
+    <aside class="col-md col-lg-4 main">
+      <form class="mb-3 my-0 my-lg-0 w-100" id="search-form">
+        <input
+          class="form-control mb-3 my-0 my-lg-0 w-100"
+          type="search"
+          placeholder="Insert City"
+          aria-label="Search"
+          id="city-input"
+        />
+        <div class="col-lg-4">
+          <button
+            class="btn btn-primary mb-3 my-0 my-lg-0 w-100"
+            id="current-location-button"
+          >
+            Current
+          </button>
+          <button
+            class="btn btn-outline-success mb-3 my-0 my-lg-0 w-100"
+            type="submit"
+            id="submit"
+          >
+            Search
+          </button>
+        </div>
+      </form>
+      <span class="temperature" id="temperature">29</span
+      ><span class="units"
+        ><a href="#" id="celsius-link" class="active">°C</a> |
+        <a href="#" id="fahrenheit-link">°F</a></span
+      >
+      <ul>
+        <li>Precipitation: <span id="precipitation"></span>%</li>
+        <li>Humidity: <span id="humidity"></span>%</li>
+        <li>Wind: <span id="wind"></span>km/h</li>
+      </ul>
+    </aside>
+  </section>
+
+  <section class="row banner">
+    <div class="col days">
+      <p><b>Weekly Forecast</b></p>
+    </div>
+  </section>
+
+  <!-- weekly forecast
 
       <section class="row weather-forecast" id="forecast">
         <div class="Monday col-md col-lg w-100">
@@ -191,3 +209,4 @@
     <script src="script.js"></script>
   </body>
 </html> -->
+</div>
