@@ -166,7 +166,7 @@ li:first-letter {
 }
 
 .weather-app-wrapper {
-  max-width: 700px;
+  max-width: 650px;
   margin: 40px auto;
 }
 
@@ -197,6 +197,12 @@ a {
   font-size: 64px;
   line-height: 1;
   font-weight: 400;
+}
+#fahrenheit-input {
+  color: pink;
+}
+#celsius-input {
+  color: pink;
 }
 
 .weather-temperature .units {
