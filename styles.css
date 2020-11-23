@@ -155,8 +155,8 @@ li {
   margin: 0;
   padding: 0;
 
-  color: rgb(135, 135, 135);
-  font-size: 16px;
+  color: rgb(33, 33, 33);
+  font-size: 20px;
   font-weight: 100;
   line-height: 19px;
 }
@@ -175,6 +175,9 @@ li:first-letter {
   border: 1px solid #dadde1;
   border-radius: 15px;
   background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+a {
+  background-color: #5f72bd;
 }
 
 .overview {
