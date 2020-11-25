@@ -83,7 +83,7 @@ a:hover {
 }
 
 .weather-temperature .active {
-  color: rgb(33, 33, 33);
+  color: #e07dd9;
   cursor: default;
 }
 
