@@ -8,7 +8,7 @@ h1 {
   font-size: 50px;
   font-weight: 400;
   line-height: 28px;
-  margin: 15px;
+  margin: 20px;
 }
 
 h5 {
@@ -23,6 +23,7 @@ h5 {
 ul {
   margin: 10px;
   padding: 0;
+  text-align: left;
 }
 
 li {
@@ -41,8 +42,8 @@ li:first-letter {
 }
 
 .weather-app-wrapper {
-  max-width: 800px;
-  margin: 30px auto;
+  max-width: 700px;
+  margin: 20px auto;
 }
 
 .weather-app {
