@@ -11,6 +11,14 @@ h1 {
   margin-bottom: 0;
 }
 
+h5 {
+  color: #5f72bd;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -82,7 +90,7 @@ a:hover {
 }
 
 .weather-forecast {
-  margin-top: 50px;
+  margin-top: 200px;
 }
 
 .weather-forecast h3 {
