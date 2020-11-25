@@ -45,6 +45,9 @@ li:first-letter {
 a {
   color: #5f72bd;
 }
+a:hover {
+  color: #5f72bd;
+}
 
 .overview {
   margin-bottom: 30px;
