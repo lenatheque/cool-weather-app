@@ -58,12 +58,12 @@ function displayForecast(response) {
   forecastElement.innerHTML = null;
   let forecast = null;
 
-  for (let index = 0; index < 24; index++) {
+  for (let index = 0; index < 7; index++) {
     forecast = response.data.list[index];
     forecastElement.innerHTML += `
     <div class="col-2">
       <h3>
-        ${formatHours(forecast.dt_txt * 1000)}
+        ${formatHours(forecast.dt * 1000)}
       </h3>
       <img
         src="http://openweathermap.org/img/wn/${
