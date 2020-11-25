@@ -64,8 +64,8 @@ a:hover {
 }
 .weather-temperature img {
   margin-right: 5px;
-  height: 80px;
-  width: 80px;
+  height: 100px;
+  width: 100px;
 }
 
 .weather-temperature strong {
@@ -91,7 +91,7 @@ a:hover {
 }
 
 .weather-forecast {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .weather-forecast h3 {
