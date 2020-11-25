@@ -62,6 +62,9 @@ a:hover {
 .overview {
   margin-bottom: 30px;
 }
+#temperature {
+  color: #e07dd9;
+}
 
 .weather-temperature img {
   margin-right: 5px;
@@ -83,7 +86,7 @@ a:hover {
 }
 
 .weather-temperature .active {
-  color: #e07dd9;
+  color: rgb(186, 186, 186)
   cursor: default;
 }
 
