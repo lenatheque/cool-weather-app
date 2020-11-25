@@ -42,7 +42,7 @@ li:first-letter {
 }
 
 .weather-app-wrapper {
-  max-width: 700px;
+  max-width: 600px;
   margin: 20px auto;
 }
 
@@ -63,7 +63,7 @@ a:hover {
   margin-bottom: 30px;
 }
 #temperature {
-  color: #878787;
+  color: rgb(33, 33, 33;
 }
 
 .weather-temperature img {
@@ -99,7 +99,7 @@ a:hover {
 }
 
 .weather-forecast h3 {
-  color: rgb(186, 186, 186);
+  color: #878787;
   font-size: 14px;
   font-weight: 400;
   text-align: center;
@@ -111,8 +111,8 @@ a:hover {
 .weather-forecast img {
   display: block;
   margin: 0 auto;
-  height: 48px;
-  width: 48px;
+  height: 50px;
+  width: 50px;
 }
 
 .weather-forecast-temperature {
