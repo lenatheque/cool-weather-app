@@ -64,15 +64,15 @@ a:hover {
 }
 .weather-temperature img {
   margin-right: 5px;
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
 }
 
 .weather-temperature strong {
   color: rgb(218, 123, 123);
   font-size: 64px;
   line-height: 2;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .weather-temperature .units {
