@@ -64,8 +64,8 @@ a:hover {
 }
 .weather-temperature img {
   margin-right: 5px;
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
 }
 
 .weather-temperature strong {
