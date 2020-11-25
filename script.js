@@ -58,7 +58,7 @@ function displayForecast(response) {
   forecastElement.innerHTML = null;
   let forecast = null;
 
-  for (let index = 0; index < 12; index++) {
+  for (let index = 0; index < 7; index++) {
     forecast = response.data.list[index];
     forecastElement.innerHTML += `
     <div class="col-2">
@@ -72,9 +72,10 @@ function displayForecast(response) {
       />
       <div class="weather-forecast-temperature">
         <strong>
-          ${Math.round(forecast.main.temp_max)}°
+         ${Math.round(forecast.main.temp_min)}°
+        
         </strong>
-        ${Math.round(forecast.main.temp_min)}°
+         ${Math.round(forecast.main.temp_max)}°
       </div>
     </div>
   `;
