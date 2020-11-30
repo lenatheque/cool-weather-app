@@ -56,7 +56,7 @@ a {
   color: #5f72bd;
 }
 a:hover {
-  color: #5f72bd;
+  color: rgb(218, 123, 123);
 }
 
 .overview {
